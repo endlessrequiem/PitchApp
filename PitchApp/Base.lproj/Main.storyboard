@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-LF-B2E">
-                                <rect key="frame" x="182.5" y="438" width="49" height="30"/>
+                                <rect key="frame" x="182.5" y="446" width="49" height="30.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Record">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,13 +31,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv6-hl-lVy">
-                                <rect key="frame" x="154" y="476" width="106" height="21"/>
+                                <rect key="frame" x="154" y="476.5" width="106" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-3G-dkJ">
-                                <rect key="frame" x="154" y="505" width="106" height="30"/>
+                                <rect key="frame" x="154" y="505" width="106" height="30.5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Stop Recording">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,9 +53,13 @@
                             <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="72" id="D1f-5y-S7O"/>
                             <constraint firstItem="iv6-hl-lVy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="38.5" id="FtQ-bw-44A"/>
                             <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1B-oj-BXj"/>
+                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="top" secondItem="iv6-hl-lVy" secondAttribute="bottom" constant="8" id="PI5-95-VLU"/>
+                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerX" secondItem="iv6-hl-lVy" secondAttribute="centerX" id="W75-u1-qBK"/>
                             <constraint firstItem="iv6-hl-lVy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YdQ-fO-AmE"/>
+                            <constraint firstItem="iv6-hl-lVy" firstAttribute="centerX" secondItem="YYA-LF-B2E" secondAttribute="centerX" id="gU1-9V-h4j"/>
                             <constraint firstItem="YYA-LF-B2E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iRo-un-qAS"/>
-                            <constraint firstItem="YYA-LF-B2E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kgV-5F-Hdf"/>
+                            <constraint firstItem="iv6-hl-lVy" firstAttribute="top" secondItem="YYA-LF-B2E" secondAttribute="bottom" id="jo7-JD-X69"/>
+                            <constraint firstItem="YYA-LF-B2E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="8" id="kgV-5F-Hdf"/>
                         </constraints>
                     </view>
                     <connections>
