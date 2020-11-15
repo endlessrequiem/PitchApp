@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lzz-ay-4fa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -52,6 +52,7 @@
                                 </state>
                                 <connections>
                                     <action selector="recordStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uze-hm-MAL"/>
+                                    <segue destination="1WO-3F-uKC" kind="show" id="d9H-Dn-nOy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,6 +67,7 @@
                             <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="138" id="xxE-Cp-cMD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FRt-If-08d"/>
                     <connections>
                         <outlet property="recordbutton" destination="YYA-LF-B2E" id="rZl-l6-bKb"/>
                         <outlet property="recordingLabel" destination="iv6-hl-lVy" id="Bxt-P8-Rv3"/>
@@ -73,6 +75,40 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879.71014492753625" y="32.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zb4-W1-hGc">
+            <objects>
+                <viewController id="1WO-3F-uKC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nTL-Sg-Iu5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hXd-89-PoU"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dx3-Nk-qWO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vg-S3-hc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="33"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="11s-7T-84Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lzz-ay-4fa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gcX-6C-jKu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tPY-DZ-nAQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr5-vI-bG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-30.434782608695656" y="32.8125"/>
         </scene>
@@ -85,6 +121,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
