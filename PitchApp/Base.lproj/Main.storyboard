@@ -16,10 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-LF-B2E">
-                                <rect key="frame" x="182.5" y="446" width="49" height="30.5"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Record">
+                            <button opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-LF-B2E">
+                                <rect key="frame" x="129.5" y="359" width="155" height="155"/>
+                                <state key="normal" image="Record">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="medium" weight="medium">
@@ -31,16 +30,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv6-hl-lVy">
-                                <rect key="frame" x="154" y="476.5" width="106" height="20.5"/>
+                                <rect key="frame" x="154" y="506" width="106" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3qf-lC-FK3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-3G-dkJ">
-                                <rect key="frame" x="154" y="505" width="106" height="30.5"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Stop Recording">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-3G-dkJ">
+                                <rect key="frame" x="175" y="554" width="64" height="64"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="ImY-0y-sVt"/>
+                                    <constraint firstAttribute="height" constant="64" id="a4h-GS-6sY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <color key="tintColor" systemColor="tertiaryLabelColor"/>
+                                <state key="normal" image="Stop">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                 </state>
                                 <connections>
                                     <action selector="recordStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uze-hm-MAL"/>
@@ -50,20 +58,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="72" id="D1f-5y-S7O"/>
-                            <constraint firstItem="iv6-hl-lVy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="38.5" id="FtQ-bw-44A"/>
-                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K1B-oj-BXj"/>
-                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="top" secondItem="iv6-hl-lVy" secondAttribute="bottom" constant="8" id="PI5-95-VLU"/>
-                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerX" secondItem="iv6-hl-lVy" secondAttribute="centerX" id="W75-u1-qBK"/>
-                            <constraint firstItem="iv6-hl-lVy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YdQ-fO-AmE"/>
-                            <constraint firstItem="iv6-hl-lVy" firstAttribute="centerX" secondItem="YYA-LF-B2E" secondAttribute="centerX" id="gU1-9V-h4j"/>
-                            <constraint firstItem="YYA-LF-B2E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iRo-un-qAS"/>
-                            <constraint firstItem="iv6-hl-lVy" firstAttribute="top" secondItem="YYA-LF-B2E" secondAttribute="bottom" id="jo7-JD-X69"/>
-                            <constraint firstItem="YYA-LF-B2E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="8" id="kgV-5F-Hdf"/>
+                            <constraint firstItem="iv6-hl-lVy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="68" id="7Zu-9H-I0J"/>
+                            <constraint firstItem="iv6-hl-lVy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JKF-a3-tGW"/>
+                            <constraint firstItem="YYA-LF-B2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PeW-wX-zD5"/>
+                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UpW-wC-efe"/>
+                            <constraint firstItem="YYA-LF-B2E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-11.5" id="l2F-5X-gYr"/>
+                            <constraint firstItem="Mad-3G-dkJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="138" id="xxE-Cp-cMD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordbutton" destination="YYA-LF-B2E" id="rZl-l6-bKb"/>
                         <outlet property="recordingLabel" destination="iv6-hl-lVy" id="Bxt-P8-Rv3"/>
+                        <outlet property="stopRecordButton" destination="Mad-3G-dkJ" id="nw0-fa-f8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -72,17 +78,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Record" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
